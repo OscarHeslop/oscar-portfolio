@@ -19,7 +19,7 @@ const { title, link, about, features,github } = Astro.props;
   
     <div>
       {features.map((feature) => (
-        <u>{feature}</u><span>,</span>
+        <u class={feature.toLowerCase()}>{feature}</u><span>,</span>
       ))}
     </div>
 
