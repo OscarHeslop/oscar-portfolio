@@ -1,6 +1,31 @@
 ---
 import HomeLayout from '../layouts/HomeLayout.astro';
+import ProjectPostComponent from '../components/ProjectPostComponent.astro';
 ---
 
+<h1>Oscar Heslop</h1>
+<h1>AI application engineer</h1>
 
-<HomeLayout> hello </HomeLayout>
+<HomeLayout> 
+</HomeLayout>
+
+<p>I enjoy learning new things and solving real world problems </p>
+<p>Outside of coding I like cycling, running, swimming, calithenics and watching anime in my free time</p>
+
+
+<ProjectPostComponent
+  title="Estate oppertunity tracker"
+  link="/rightmove"
+  about="A web scraper, collects data writes to Postgre Database.All stored locally."
+  features={["Playwright","PostgreSQL","Docker","Flask"]}
+  github = "https://github.com/OscarHeslop/estate-opportunity-tracker">
+</ProjectPostComponent>
+
+
+<ProjectPostComponent
+  title="Auto website updater"
+  link="/autoupdater"
+  about="Lets user upload images and schedule when added to demo website,to increase Page Rank"
+  features={["Sqlite","Scheduling","Docker","Flask"]}
+  github = "https://github.com/OscarHeslop/website-update-scheduler">
+</ProjectPostComponent>
