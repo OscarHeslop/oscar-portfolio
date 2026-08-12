@@ -1,0 +1,15 @@
+---
+interface Props {
+  name: string;
+  about: string;
+  link: string;
+}
+
+const { name, about, link } = Astro.props;
+---
+
+<div>
+  <h2>{name}</h2>
+  <p>{about}</p>
+  <a href={link}>View project</a>
+</div>

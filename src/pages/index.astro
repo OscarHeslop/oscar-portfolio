@@ -1,6 +1,7 @@
 ---
 import HomeLayout from '../layouts/HomeLayout.astro';
 import ProjectPostComponent from '../components/ProjectPostComponent.astro';
+import VibeCodedProjectComponent from '../components/VibeCodedProjectComponent.astro'
 ---
 
 <h1>Oscar Heslop</h1>
@@ -10,7 +11,7 @@ import ProjectPostComponent from '../components/ProjectPostComponent.astro';
 </HomeLayout>
 
 <p>I enjoy learning new things and solving real world problems </p>
-<p>Outside of coding I like cycling, running, swimming, calithenics and watching anime in my free time</p>
+<p>Outside of coding I enjoy bouldering, cycling, running, swimming, calithenics and watching anime in my free time</p>
 
 
 <ProjectPostComponent
@@ -29,3 +30,18 @@ import ProjectPostComponent from '../components/ProjectPostComponent.astro';
   features={["Sqlite","Scheduling","Docker","Flask"]}
   github = "https://github.com/OscarHeslop/website-update-scheduler">
 </ProjectPostComponent>
+
+
+<h1>Vibe coded Projects</h1>
+
+<VibeCodedProjectComponent
+  name="Computer Science Study App"
+  about="An AI-assisted study app that taught me Firebase, Google sign-in, OpenRouter, and basic interaction with LLMs."
+  link="https://oscarcompscistudyapp.netlify.app/">
+</VibeCodedProjectComponent>
+
+<VibeCodedProjectComponent
+  name="Goals Planner"
+  about="An AI-assisted goal planning application built to explore web application development and AI-assisted coding."
+  link="https://oscargoalsplanner.netlify.app/">
+</VibeCodedProjectComponent>
